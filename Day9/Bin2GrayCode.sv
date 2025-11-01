@@ -1,8 +1,8 @@
 module Bin2Gray #(
     parameter VEC_W = 4
 )(
-    input wire[VEC_W-1:0] bin_i,
-    output wire[VEC_W-1:0] gray_o
+    input  logic [VEC_W-1:0] bin_i,
+    output logic [VEC_W-1:0] gray_o
 );
 
     always_comb begin
