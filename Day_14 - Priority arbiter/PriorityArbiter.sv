@@ -9,7 +9,7 @@ module PriorityArbiter #(
     always_comb begin
         logic grant_permission = 0;
 
-        grants_o = 0;
+        grants_o = '0;
         for(int i = 0; i <NUM_PORTS; i++) begin 
             if(requests_i[i] && grant_permission == 0) begin
                 grants_o[i] = 1'b1;
